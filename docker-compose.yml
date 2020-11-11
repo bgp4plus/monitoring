@@ -30,7 +30,7 @@ services:
     restart: unless-stopped
 
   zabbix-db:
-    image: mariadb:10.5.7
+    image: mariadb:10.3.16
     volumes:
       - ./my/own/datadir:/var/lib/mysql
       - ./my/custom:/etc/mysql/conf.d
